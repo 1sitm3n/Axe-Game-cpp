@@ -5,12 +5,10 @@ The player controls a blue circle that can move left and right to avoid a red fa
 If the axe collides with the circle, the game ends with a "Game Over" message.
 
 **Overview**
-
 This project demonstrates fundamental C++ programming concepts, real-time input handling, and basic collision detection using Raylib’s 2D rendering system.
 It serves as an ideal foundation for beginners learning game loops, keyboard input, and bounding box collisions.
 
 **Core Features**
-
 Player Movement: Move the blue circle using the A and D keys.
 Enemy Object: A red axe continuously moves vertically between the top and bottom of the screen.
 Collision Detection: If the circle’s bounding area overlaps with the axe’s, the game displays a "Game Over" message.
@@ -23,10 +21,12 @@ Edge Calculations: The circle and axe edges are dynamically updated every frame 
 Boolean Collision Logic: A clear logical expression handles overlap detection between two objects.
 Game Loop: Implements a classical while (!WindowShouldClose()) loop that runs the entire game cycle.
 
+
 **Requirements**
 C++17 or newer
 Raylib library (version 4.0 or above recommended)
 g++ (MinGW64) or MSYS2 environment for Windows
+
 
 **Installation and Setup**
 Install Raylib (MSYS2 / MinGW64)
@@ -37,10 +37,13 @@ pacman -S mingw-w64-x86_64-raylib
 From your project directory:
 g++ axe_game.cpp -o axe_game.exe -lraylib -lopengl32 -lgdi32 -lwinmm
 
+
 **Run the Game**
 ./axe_game.exe
 
-**Controls**A - Move circle left
+
+**Controls**
+A - Move circle left
 D - Move circle right
 ESC - Close window
 
